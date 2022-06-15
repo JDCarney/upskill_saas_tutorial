@@ -33,9 +33,13 @@ h1, h2, h3 {
     background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-//Navbar Styles
-.navbar-brand,
-.navbar-nav li a {
+//Nav Styles
+.navbar {
+    border: none;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
     color: white;
     &:hover {
         color: white;
@@ -46,6 +50,17 @@ h1, h2, h3 {
 .navbar-brand {
     font-family: 'Open Sans', sans-seriff;
     font-weight: 800;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid white;
+    &:hover, &:focus {
+      background-color: #23074d;  
+    }
 }
 
 //Home Page styles
